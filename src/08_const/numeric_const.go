@@ -23,10 +23,25 @@ package main
 import "fmt"
 
 const (
-	Big   = 1 << 100
-	Small = Big >> 99
+	// 通过将1位左移100位来创建一个巨大的数字。
+	// 换句话说，二进制数为1，后跟100个零。
+	Big   = 1 << 50
+	// 再将它向右移动99个位置，所以我们最终得到1 << 1或2。
+	Small = Big >> 49
 )
 
+func needInt(x int) int {
+	return x * 10 + 1
+}
+
+func needFloat(x float64) float64 {
+	return x * 0.1
+}
+
 func main() {
-	fmt.Printf("Big: %v, Small: %v \n", Big, Small)
+	fmt.Println("needInt: ", needInt(Big))
+	fmt.Println("needInt: ", needInt(Small))
+	fmt.Println("needFloat: ", needFloat(Big))
+
+	//fmt.Printf("Big: %v, Small: %v \n", Big, Small)
 }
