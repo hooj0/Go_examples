@@ -28,6 +28,7 @@ switch语句 相当于多个 if-else 判断语句的变体
 switch语句 的初始语句和if的初始语句、for前置语句一致
 switch语句 判断参数可以是任何可以比较的数据类型， case 无需为常量，且取值不必为整数
 switch语句 default 相当于 else 结构体，当case 都不满足情况下执行
+switch语句 default 语句不是必选的
 switch语句 只运行选定的 case，而非之后所有的 case，Go 在每个case后都自动添加break
 ------------------------------------------------------------------*/
 
