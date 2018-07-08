@@ -43,5 +43,5 @@ func main() {
 	fmt.Println("needInt: ", needInt(Small))
 	fmt.Println("needFloat: ", needFloat(Big))
 
-	//fmt.Printf("Big: %v, Small: %v \n", Big, Small)
+	fmt.Printf("Big: %v, Small: %v \n", Big, Small)
 }
