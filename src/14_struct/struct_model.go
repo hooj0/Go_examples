@@ -38,8 +38,10 @@ func main() {
 
 	// 初始化 Vertex 结构体，相当于创建一个Vertex实例
 	var vertex = Vertex{ 2, 5 }
+	// 直接读取结构体对象值
+	fmt.Println(vertex)
 
-	// 访问 Vertex 结构体中的数据
+	// 访问 Vertex 结构体中的属性数据
 	fmt.Println("x: ", vertex.x, "y: ", vertex.y)
 
 	// 再次实例化赋值
