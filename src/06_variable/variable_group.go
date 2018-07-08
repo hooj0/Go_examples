@@ -6,6 +6,9 @@
 // copyright by hoojo@2018
 // --------------------------------------------------------------
 
+
+
+
 /* ---------------------------------------------------------------
 variable group
 ==================================================================
@@ -21,16 +24,16 @@ package main
 import "fmt"
 
 var (
-	Data string = "this is data str"
-	Index int = 12
-	Flag bool = false
+	Data  string = "this is data str"
+	Index int    = 12
+	Flag  bool   = false
 )
 
 func main() {
 
 	var (
-		a int = 1
-		x int8 = 10
+		a int    = 1
+		x int8   = 10
 		z string = "hello"
 	)
 
