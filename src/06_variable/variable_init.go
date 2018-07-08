@@ -30,7 +30,7 @@ func main() {
 	// 在 func 中进行声明初始化
 	var x, y int = 2, 6
 
-	// 在 variables.go 中声明的变量，不再需要设置类型，可以直接赋值
+	// 声明变量，不再需要设置类型，可以直接赋值
 	var a, i, result = true, false, false
 
 	fmt.Println("x: ", x, ", y: ", y) // x:  2 , y:  6
