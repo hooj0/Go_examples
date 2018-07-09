@@ -8,6 +8,7 @@
 
 
 
+
 /* ---------------------------------------------------------------
 struct literals
 ==================================================================
@@ -30,18 +31,18 @@ type Vertex struct {
 func main() {
 
 	// 只有默认值的结构体
-	var  v1 = Vertex{}
-	fmt.Println("v1: ", v1)		// v1:  {0 0}
+	var v1 = Vertex{}
+	fmt.Println("v1: ", v1)	// v1:  {0 0}
 
 	// 按照属性顺序进行设置值
-	var v2 = Vertex{ 2, 7 }
-	fmt.Println("v2: ", v2)		// v2:  {2 7}
+	var v2 = Vertex{2, 7}
+	fmt.Println("v2: ", v2) 	// v2:  {2 7}
 
 	// 为指定属性设置值
-	var v3 = Vertex{ Y: 5 }
-	fmt.Println("v3: ", v3)		// v3:  {0 5}
+	var v3 = Vertex{Y: 5}
+	fmt.Println("v3: ", v3) 	// v3:  {0 5}
 
 	// 构建指针结构体
-	var p = &Vertex{ 2, 7 }
-	fmt.Println("p: ", p)		// p:  &{2 7}
+	var p = &Vertex{2, 7}
+	fmt.Println("p: ", p) 	// p:  &{2 7}
 }
