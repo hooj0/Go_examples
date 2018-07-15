@@ -39,7 +39,8 @@ var complexMap = map[string]Vertex {
 		"jack@qq.com",
 		"jack chen",
 	},
-	"jason": Vertex {
+	// Vertex 类型可以省略
+	"jason": {
 		"jason@qq.com",
 		"jack chen",
 	},
