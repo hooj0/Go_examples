@@ -45,4 +45,9 @@ func main() {
 	// 构建指针结构体
 	var p = &Vertex{2, 7}
 	fmt.Println("p: ", p) 	// p:  &{2 7}
+
+	// 即便没有初始化，也是有零值
+	var empty Vertex
+	fmt.Printf("(%v, %T)\n", empty, empty)		// ({0 0}, main.Vertex)
+	fmt.Println("X: ", empty.X, ", Y: ", empty.Y) 	// X:  0 , Y:  0
 }
