@@ -26,7 +26,7 @@ func main() {
 
 	x := time.Now().Hour()
 
-	// 没有条件参数
+	// 没有条件参数，可以进行表达式判断
 	switch {
 		case x == 1:
 			fmt.Println("x = 1")
