@@ -30,6 +30,7 @@ switch语句 判断参数可以是任何可以比较的数据类型， case 无�
 switch语句 default 相当于 else 结构体，当case 都不满足情况下执行
 switch语句 default 语句不是必选的
 switch语句 只运行选定的 case，而非之后所有的 case，Go 在每个case后都自动添加break
+switch语句 可以利用break和return结束当前流程，提前终止
 ------------------------------------------------------------------*/
 
 package main
