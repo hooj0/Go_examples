@@ -61,6 +61,6 @@ func complexFor()  {
 }
 func main() {
 
-	//simpleFor()
+	simpleFor()
 	complexFor()
 }
