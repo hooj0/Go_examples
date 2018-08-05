@@ -53,6 +53,6 @@ func main() {
 	vertex.y = 666
 	fmt.Println("x: ", vertex.x, "y: ", vertex.y)
 
-	vertex2 := new(Vertex)
+	vertex2 := new(Vertex)		// new(Vertex) 和 &Vertex{} 是等价的
 	fmt.Println(vertex2)		// &{0 0} 返回指针，直接执行内存地址
 }
