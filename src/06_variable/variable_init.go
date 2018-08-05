@@ -20,10 +20,20 @@ variable init
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // 在package中进行初始化
 var foo, bar, data int8 = 1, 3, 54
+
+// 可以设置表达式，在后期运算时求值
+var (
+	home   = os.Getenv("HOME")
+	user   = os.Getenv("USER")
+	gopath = os.Getenv("GOPATH")
+)
 
 func main() {
 
@@ -36,4 +46,6 @@ func main() {
 	fmt.Println("x: ", x, ", y: ", y) // x:  2 , y:  6
 	fmt.Println("a: ", a, ", i: ", i, ", result: ", result) // a:  true , i:  false , result:  false
 	fmt.Println("foo: ", foo, ", bar: ", bar, ", data: ", data) // foo:  1 , bar:  3 , data:  54
+
+	fmt.Println("home:", home, ", user:", user, ", gopath:", gopath)
 }
