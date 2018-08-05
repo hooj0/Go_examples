@@ -43,4 +43,9 @@ func main() {
 	// 向arrays追加1个新元素
 	arrays = append(arrays, 0)
 	output(arrays)		// len: 3, cap: 4, items: [1 2 0]
+
+	var numbers = []int{ 4, 5, 6, }
+	// arrays = append(arrays, numbers)	// 编译不通过
+	arrays = append(arrays, numbers...)	// 编译通过， len: 6, cap: 8, items: [1 2 0 4 5 6]
+	output(arrays)
 }
