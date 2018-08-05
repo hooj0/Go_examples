@@ -21,8 +21,9 @@ variable init
 package main
 
 import (
+	"flag"
 	"fmt"
-	"os"
+		"os"
 )
 
 // 在package中进行初始化
@@ -34,6 +35,23 @@ var (
 	user   = os.Getenv("USER")
 	gopath = os.Getenv("GOPATH")
 )
+
+// init 方法是初始化方法，可以初始化一些变量的值
+// init 函数还常被用在程序真正开始执行前，检验或校正程序的状态。
+func init() {
+	if user == "" {
+		// 输出错误日志，抛出错误
+		// log.Fatal("$USER not set")
+	}
+	if home == "" {
+		home = "/home/" + user
+	}
+	if gopath == "" {
+		gopath = home + "/go"
+	}
+	// gopath 可通过命令行中的 --gopath 标记覆盖掉。
+	flag.StringVar(&gopath, "gopath", gopath, "override default GOPATH")
+}
 
 func main() {
 
