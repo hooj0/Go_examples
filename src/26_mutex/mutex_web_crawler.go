@@ -70,10 +70,11 @@ func Crawl(url string, depth int, fetcher Fetcher, resources chan string, quit c
 		go Crawl(u, depth-1, fetcher, resources, end)
 	}
 
-
+	// 排空信道
 	for i := 0; i < len(urls); i++ {
-		<- end
+		<- end	// 等待任务完成
 	}
+	// 一切完成
 
 	quit <- "quit"
 	return
