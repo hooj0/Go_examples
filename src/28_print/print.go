@@ -20,6 +20,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/hooj0/util"
 	"os"
 	"time"
 )
@@ -87,4 +88,5 @@ func main() {
 	e := &E{ 7, -2.35, "abc\tdef" }
 	fmt.Printf("%v\n", e)			// "hello"7/-2.35/"abc\tdef"
 
+	fmt.Println(util.Reverse("hallo world!"))
 }
