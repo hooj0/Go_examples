@@ -1,5 +1,3 @@
-package main
-
 // --------------------------------------------------------------
 // author:   hoojo
 // email:    hoojo_@126.com
@@ -44,6 +42,7 @@ main 函数主程序 当执行 install 后，可以执行命令运行程序
 	$ go run application.go
 	hello, world
 ------------------------------------------------------------------*/
+package main
 
 import (
 	"fmt"
