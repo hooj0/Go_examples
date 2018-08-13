@@ -1,4 +1,3 @@
-package util
 // --------------------------------------------------------------
 // author:   hoojo
 // email:    hoojo_@126.com
@@ -25,6 +24,8 @@ test
 若在包目录下运行 go 工具，也可以忽略包路径
 	$ go test
 ------------------------------------------------------------------*/
+package util
+
 import "testing"
 
 func TestReverse(t *testing.T) {
